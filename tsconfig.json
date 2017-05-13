@@ -1,0 +1,21 @@
+{
+    "version": "2.0.3",
+    "compilerOptions": {
+        "declaration": false,
+        "module": "commonjs",
+        "target": "es5",
+        "lib": [
+            "es6",
+            "dom"
+        ],
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "types": ["node"]
+    },
+    "exclude": [
+        "node_modules",
+        "dist",
+        "demo/dist"
+    ],
+    "compileOnSave": false
+}

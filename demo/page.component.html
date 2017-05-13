@@ -1,0 +1,39 @@
+<ctaf-panel customClass="abc" [title]="panelTitle"></ctaf-panel>
+
+<button (click)="create()" [ngClass]="panelTitle">Create Childe Component1</button>
+<button (click)="create2()">Create Childe Component2</button>
+
+<button (click)="changeTitle()">ChangeTitle</button>
+
+<ctaf-test2 #test2></ctaf-test2>
+
+<button (click)="sendMessage('aaa')">Send Message</button>
+
+
+<button (click)="aaa()">Test3</button>
+
+<select multiple [(ngModel)]="aValue" (change)="selectChange()">
+    <option value='1'>1</option>
+    <option value='2'>2</option>
+    <option value='3'>3</option>
+    <option value='4'>4</option>
+</select>
+
+<div *ngFor="let a of as">
+    <input type="checkbox" [(ngModel)]='a.checked' (click)="alert(a.checked)">
+</div>
+
+<strong class='ajaxGet'>Test AJAX</strong><br>
+<button (click)="ajaxGet()">GET</button><br>
+<button (click)="ajaxPost()">POST</button><br>
+<button (click)="ajaxPut()">Put</button><br>
+<button (click)="ajaxDelete()">Delete</button><br>
+<br><br><br>
+<button (click)="addListener()">Add Listener to WebSocket Connect</button><br>
+<br>
+<button (click)="webSocketConnet()">WebSocket Connect</button><br>
+<br>
+<button (click)="publish()">Publish Data</button><br>
+
+<!--<button (click)="ajax()">Ajax</button><br>
+<button (click)="ajax()">Ajax</button><br>-->
